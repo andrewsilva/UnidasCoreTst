@@ -1,0 +1,11 @@
+.#{$prefix}title {
+  &-secondary {
+    margin-bottom: $margin-md;
+    color: $color-second-orange;
+    font-size: 16px;
+
+    @include modifier(is-medium) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.#{$prefix}alert {
+  color: $white;
+
+  .#{$prefix}boxed-content {
+    background: $color-aux-dark-blue;
+  }
+
+  .#{$prefix}modal__content-body {
+    padding-top: 40px;
+  }
+
+  @include element(body) {
+    padding: 20px 20px 35px 20px;
+    border: 1px solid $color-second-orange;
+    text-align: center;
+    border-radius: $small-border-radius;
+  }
+
+  @include element(message) {
+    color: $white;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  @include element(title) {
+    color: $color-second-orange;
+    line-height: 120%;
+    margin-bottom: $margin-sm;
+  }
+
+  @include element(icon) {
+    font-size: 90px;
+  }
+}

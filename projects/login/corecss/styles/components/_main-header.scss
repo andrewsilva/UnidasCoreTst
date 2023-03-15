@@ -1,0 +1,161 @@
+.#{$prefix}main-header {
+  display: flex;
+  background: $color-aux-dark-blue;
+  height: 50px;
+  align-items: center;
+  color: $white;
+  padding: 0 20px;
+  border-radius: 0 0 $big-border-radius $big-border-radius;
+  position: relative;
+  overflow: hidden;
+  @include transition(all);
+
+  @media (max-width: $large-mobile-width) {
+    overflow: visible;
+  }
+
+  @include element(logo) {
+    font-size: 57px;
+    width: 57px;
+  }
+
+  @include element(title) {
+    font-size: inherit;
+    color: $white;
+    font-weight: normal;
+    flex: 2;
+  }
+
+  @include element(separator) {
+    height: 24px;
+    width: 1px;
+    border: 1px solid $primary-color;
+    margin: 0 $small-padding;
+    @include transition(all);
+  }
+
+  @include element(extra-primary-information) {
+    margin-right: $margin-md;
+    color: $color-regular-gray;
+
+    .#{$prefix}paragraph {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: $color-second-orange;
+      font-weight: normal;
+    }
+
+    @media (max-width: $large-mobile-width) {
+      display: none;
+    }
+  }
+
+  @include element(menu-icon) {
+    font-size: 18px;
+  }
+
+  @include element(menu-overlay) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: $color-heavy-gray;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    right: -100%;
+    z-index: 100;
+    @include transition(all);
+
+    @media (max-width: $large-mobile-width) {
+      bottom: initial;
+      right: 0;
+      left: 0;
+      top: -400px;
+      background: $color-text-dark-gray;
+    }
+  }
+
+  @include modifier(is-open) {
+    background: $color-heavy-gray;
+
+    @media (max-width: $large-mobile-width) {
+      border-radius: 0;
+    }
+  }
+
+  @include element(menu-navbar) {
+    display: flex;
+
+    a {
+      color: currentColor;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: currentColor;
+        text-decoration: none;
+      }
+    }
+
+    & .und-icon {
+      font-size: 22px;
+      margin-right: $margin-sm;
+    }
+
+    @media (max-width: $large-mobile-width) {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        padding: 20px;
+        width: 195px;
+
+        &:not(:last-child) {
+          border-bottom: 1px dashed $color-regular-gray;
+        }
+      }
+    }
+  }
+
+  @include element(menu-overlay-close-button) {
+    margin-left: 40px;
+
+    @media (max-width: $large-mobile-width) {
+      position: absolute;
+      top: -30px;
+      right: 20px;
+    }
+
+  }
+
+  @include element(extra-info-and-menu-button) {
+    @include transition(opacity);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &--is-open &__menu-overlay {
+    right: 0;
+
+    @media (max-width: $large-mobile-width) {
+      top: 50px;
+    }
+  }
+
+  &--is-open &__extra-info-and-menu-button {
+    opacity: 0;
+  }
+
+  &--is-open &__separator {
+    border-color: $third-color;
+  }
+
+}

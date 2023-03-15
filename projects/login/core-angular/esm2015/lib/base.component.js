@@ -1,0 +1,7 @@
+export class BaseComponent {
+    constructor(appSelector) {
+        this.appPrefix = 'und';
+        this.cssPrefix = `${this.appPrefix}-${appSelector}`;
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYmFzZS5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9wcm9qZWN0cy9jb3JlLWFuZ3VsYXIvc3JjL2xpYi9iYXNlLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLE9BQU8sYUFBYTtJQUd4QixZQUFZLFdBQW1CO1FBRnRCLGNBQVMsR0FBRyxLQUFLLENBQUM7UUFHekIsSUFBSSxDQUFDLFNBQVMsR0FBRyxHQUFHLElBQUksQ0FBQyxTQUFTLElBQUksV0FBVyxFQUFFLENBQUM7SUFDdEQsQ0FBQztDQUNGIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIEJhc2VDb21wb25lbnQge1xuICByZWFkb25seSBhcHBQcmVmaXggPSAndW5kJztcbiAgcmVhZG9ubHkgY3NzUHJlZml4OiBzdHJpbmc7XG4gIGNvbnN0cnVjdG9yKGFwcFNlbGVjdG9yOiBzdHJpbmcpIHtcbiAgICB0aGlzLmNzc1ByZWZpeCA9IGAke3RoaXMuYXBwUHJlZml4fS0ke2FwcFNlbGVjdG9yfWA7XG4gIH1cbn1cbiJdfQ==

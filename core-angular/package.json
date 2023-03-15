@@ -1,0 +1,27 @@
+{
+  "name": "core-angular",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "~10.0.5",
+    "@angular/core": "~10.0.5"
+  },
+  "dependencies": {
+    "@angular/common": "^10.0.14",
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/core-angular.umd.js",
+  "module": "fesm2015/core-angular.js",
+  "es2015": "fesm2015/core-angular.js",
+  "esm2015": "esm2015/core-angular.js",
+  "fesm2015": "fesm2015/core-angular.js",
+  "typings": "core-angular.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  },
+  "devDependencies": {
+    "@angular/core": "^10.0.5",
+    "rxjs": "^6.5.3",
+    "zone.js": "^0.10.3"
+  }
+}

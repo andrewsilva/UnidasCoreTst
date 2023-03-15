@@ -1,0 +1,146 @@
+.#{$prefix}button {
+  $default-color: #dddddd;
+  $default-hover-color: darken($default-color, 10);
+
+  background: $default-color;
+  font-size: 16px;
+  font-weight: 500;
+  color: $text-color;
+  border: 1px solid $default-color;
+  display: flex;
+  padding: 0 20px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: $button-border-radius;
+
+  &:hover {
+    background: $default-hover-color;
+    border-color: $default-hover-color;
+  }
+
+  @include modifier(is-text) {
+    background: transparent;
+    color: $primary-color;
+    border: none;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid currentColor;
+
+    &:hover {
+      background: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+
+  @include modifier(is-primary) {
+    background: $primary-color;
+    color: $white;
+    border-color: $primary-color;
+
+    &:hover {
+      background: $color-aux-dark-blue;
+      border-color: $color-aux-dark-blue;
+    }
+
+    &.#{$prefix}button--is-disabled {
+      background: $color-regular-gray;
+      border-color: $color-regular-gray;
+      color: $white;
+      pointer-events: none;
+    }
+  }
+
+  @include modifier(is-secondary) {
+    background: transparent;
+    color: $primary-color;
+    border-color: darken($primary-color, 2);
+
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+    }
+
+    &.#{$prefix}button--is-disabled {
+      background: $color-bck-off-white;
+      border-color: $color-bck-off-white;
+      color: $color-regular-gray;
+      pointer-events: none;
+    }
+  }
+
+  @include modifier(is-outline) {
+    background: transparent;
+    color: $fifth-color;
+    border-color: currentColor;
+
+    &:hover {
+      background: $fifth-color;
+      border-color: $fifth-color;
+      color: $white;
+    }
+
+    &.#{$prefix}button--is-disabled {
+      background: $color-bck-off-white;
+      border-color: $color-regular-gray;
+      color: $color-regular-gray;
+      pointer-events: none;
+    }
+  }
+
+  @include modifier(is-wrapper) {
+    padding: $extra-small-padding !important;
+    height: 0 !important;
+    background: transparent;
+    border: none;
+    color: currentColor;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  @include modifier(is-spinning) {
+    pointer-events: none !important;
+  }
+
+  @include modifier(is-highlighted) {
+    font-weight: bold;
+  }
+
+  @include modifier(is-block) {
+    width: 100%;
+  }
+
+  @include modifier(is-small) {
+    padding: 0 5px;
+    font-size: .8rem;
+
+    & .#{$prefix}button__icon {
+      font-size: 14px;
+    }
+  }
+
+  @include element(icon) {
+    font-size: 20px;
+    margin-right: 5px;
+    color: currentColor;
+
+    @include modifier(no-margin) {
+      margin: 0;
+    }
+  }
+
+  @include element(spin) {
+    margin-right: 10px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

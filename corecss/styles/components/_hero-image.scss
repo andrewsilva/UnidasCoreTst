@@ -1,0 +1,65 @@
+.#{$prefix}hero-image {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: transparent center no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include element(fadein) {
+    opacity: 0;
+    position: relative;
+    z-index: 20;
+
+    &.--animating {
+      @include animation(fadein, 2s);
+      opacity: 1;
+    }
+  }
+
+  @include element(fadeout) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    &.--animating {
+      @include animation(fadeout, 1s);
+      opacity: 0;
+    }
+  }
+
+  @include element(content) {
+    position: relative;
+    z-index: 10;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    & > * {
+      flex: 2;
+    }
+  }
+
+  @include element(backdrop) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    z-index: 5;
+
+    @include modifier(is-blue) {
+      background: rgba(11, 58, 122, 0.6);
+    }
+  }
+}

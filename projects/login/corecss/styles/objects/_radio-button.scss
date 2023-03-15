@@ -1,0 +1,59 @@
+.#{$prefix}radio-button {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  display: flex;
+  margin: 0 10px 0 0;
+
+  @include modifier(is-block) {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  @include element(marker) {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #BDBDBD;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  @include element(input) {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:checked + .#{$prefix}radio-button__marker {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  @include element(content) {
+    flex: 2;
+  }
+
+  @include modifier(has-no-bullet) {
+    .#{$prefix}radio-button__marker {
+      display: none;
+    }
+
+    input:checked ~ .#{$prefix}radio-button__content {
+      font-weight: 600;
+    }
+  }
+}
+
+.#{$prefix}-is-invalid .und-radio-button__marker {
+  border-color: $color-aux-error;
+}
+

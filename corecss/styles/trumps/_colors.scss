@@ -1,0 +1,17 @@
+.#{$prefix} {
+  &primary-color {
+    color: $primary-color;
+  }
+
+  &second-color {
+    color: $second-color;
+  }
+
+  &third-color {
+    color: $third-color;
+  }
+
+  &fourth-color {
+    color: $fourth-color;
+  }
+}

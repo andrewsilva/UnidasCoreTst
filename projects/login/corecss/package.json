@@ -1,0 +1,17 @@
+{
+  "name": "corecss",
+  "version": "1.0.0",
+  "description": "A biblioteca css do style guide da Unidas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "José Junior",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unidas/corecss"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,56 @@
+.#{$prefix}modal {
+  opacity: 0;
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @include modifier(is-visible) {
+    @include animation(fadein, .3s);
+    opacity: 1;
+  }
+
+  @include element(content) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 375px;
+    font-size: 14px;
+  }
+
+  @include element(content-body) {
+    padding: 0 45px 30px 45px;
+
+    *:not(input, select, textarea, button) {
+      font-size: inherit;
+    }
+  }
+
+  @include element(content-header) {
+    display: flex;
+    padding: 20px;
+  }
+
+  @include element(header-title) {
+    flex: 2;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  @include element(header-close-button) {
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

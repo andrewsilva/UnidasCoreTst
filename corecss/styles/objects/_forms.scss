@@ -1,0 +1,11 @@
+.und--is-invalid {
+  input, select, textarea {
+    border-color: $color-aux-error;
+  }
+}
+
+input, select, textarea {
+  &.und--is-invalid {
+    border-color: $color-aux-error;
+  }
+}

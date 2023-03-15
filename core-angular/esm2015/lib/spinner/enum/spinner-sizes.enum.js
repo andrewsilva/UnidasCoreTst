@@ -1,0 +1,6 @@
+export var SpinnerSizesEnum;
+(function (SpinnerSizesEnum) {
+    SpinnerSizesEnum["SMALL"] = "small";
+    SpinnerSizesEnum["MEDIUM"] = "medium";
+})(SpinnerSizesEnum || (SpinnerSizesEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3Bpbm5lci1zaXplcy5lbnVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvY29yZS1hbmd1bGFyL3NyYy9saWIvc3Bpbm5lci9lbnVtL3NwaW5uZXItc2l6ZXMuZW51bS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxnQkFHWDtBQUhELFdBQVksZ0JBQWdCO0lBQzFCLG1DQUFlLENBQUE7SUFDZixxQ0FBaUIsQ0FBQTtBQUNuQixDQUFDLEVBSFcsZ0JBQWdCLEtBQWhCLGdCQUFnQixRQUczQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIFNwaW5uZXJTaXplc0VudW0ge1xuICBTTUFMTCA9ICdzbWFsbCcsXG4gIE1FRElVTSA9ICdtZWRpdW0nLFxufVxuIl19

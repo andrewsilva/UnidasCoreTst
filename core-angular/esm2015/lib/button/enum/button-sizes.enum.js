@@ -1,0 +1,7 @@
+export var ButtonSizesEnum;
+(function (ButtonSizesEnum) {
+    ButtonSizesEnum["SMALL"] = "small";
+    ButtonSizesEnum["MEDIUM"] = "medium";
+    ButtonSizesEnum["LARGE"] = "large";
+})(ButtonSizesEnum || (ButtonSizesEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnV0dG9uLXNpemVzLmVudW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9jb3JlLWFuZ3VsYXIvc3JjL2xpYi9idXR0b24vZW51bS9idXR0b24tc2l6ZXMuZW51bS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxlQUlYO0FBSkQsV0FBWSxlQUFlO0lBQ3pCLGtDQUFlLENBQUE7SUFDZixvQ0FBaUIsQ0FBQTtJQUNqQixrQ0FBZSxDQUFBO0FBQ2pCLENBQUMsRUFKVyxlQUFlLEtBQWYsZUFBZSxRQUkxQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIEJ1dHRvblNpemVzRW51bSB7XG4gIFNNQUxMID0gJ3NtYWxsJyxcbiAgTUVESVVNID0gJ21lZGl1bScsXG4gIExBUkdFID0gJ2xhcmdlJyxcbn1cbiJdfQ==

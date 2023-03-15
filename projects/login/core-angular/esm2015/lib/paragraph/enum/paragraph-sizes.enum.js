@@ -1,0 +1,6 @@
+export var ParagraphSizesEnum;
+(function (ParagraphSizesEnum) {
+    ParagraphSizesEnum["MEDIUM"] = "medium";
+    ParagraphSizesEnum["LARGE"] = "large";
+})(ParagraphSizesEnum || (ParagraphSizesEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGFyYWdyYXBoLXNpemVzLmVudW0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy9jb3JlLWFuZ3VsYXIvc3JjL2xpYi9wYXJhZ3JhcGgvZW51bS9wYXJhZ3JhcGgtc2l6ZXMuZW51bS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxrQkFHWDtBQUhELFdBQVksa0JBQWtCO0lBQzVCLHVDQUFpQixDQUFBO0lBQ2pCLHFDQUFlLENBQUE7QUFDakIsQ0FBQyxFQUhXLGtCQUFrQixLQUFsQixrQkFBa0IsUUFHN0IiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZW51bSBQYXJhZ3JhcGhTaXplc0VudW0ge1xuICBNRURJVU0gPSAnbWVkaXVtJyxcbiAgTEFSR0UgPSAnbGFyZ2UnLFxufVxuIl19

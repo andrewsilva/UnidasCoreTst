@@ -1,0 +1,7 @@
+@mixin animation($animationName, $animationDuration: 2s) {
+  -webkit-animation: $animationName $animationDuration; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: $animationName $animationDuration; /* Firefox < 16 */
+  -ms-animation: $animationName $animationDuration; /* Internet Explorer */
+  -o-animation: $animationName $animationDuration; /* Opera < 12.1 */
+  animation: $animationName $animationDuration;
+}

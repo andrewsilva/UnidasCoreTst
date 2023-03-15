@@ -1,0 +1,32 @@
+import { OnInit, Renderer2 } from '@angular/core';
+import { ControlValueAccessor, FormBuilder } from '@angular/forms';
+import { BaseComponent } from "../../base.component";
+import { CoreAngularService } from "../../core-angular.service";
+import { radioGroupItemsType } from "./types/radio-group-items.type";
+import * as i0 from "@angular/core";
+export declare class RadioButtonGroupComponent extends BaseComponent implements OnInit, ControlValueAccessor {
+    private readonly caService;
+    private readonly _renderer;
+    private readonly _fb;
+    private _value;
+    id: string;
+    groupName: string;
+    form: any;
+    layout: string;
+    radioItems: radioGroupItemsType[];
+    noBullet: boolean;
+    constructor(caService: CoreAngularService, _renderer: Renderer2, _fb: FormBuilder);
+    ngOnInit(): void;
+    writeValue(newValue: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    onChange: any;
+    onTouched: any;
+    get value(): any;
+    set value(v: any);
+    onValueChange(value: any): void;
+    setNewValue(value: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<RadioButtonGroupComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<RadioButtonGroupComponent, "und-radio-button-group", never, { "layout": "layout"; "radioItems": "items"; "noBullet": "noBullet"; }, {}, never, never>;
+}

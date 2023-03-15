@@ -1,0 +1,38 @@
+.#{$prefix}radio-button-group {
+
+  .#{$prefix}radio-button {
+    margin-bottom: 20px;
+  }
+
+  .#{$prefix}card {
+    margin: 0 0 0 12px;
+
+    .#{$prefix}radio-button {
+      margin-bottom: 0;
+    }
+
+    .#{$prefix}radio-button-group__extra-info {
+      &-item {
+        margin-bottom: 6px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .#{$prefix}radio-button--has-no-bullet .#{$prefix}card {
+    margin: 0;
+  }
+
+  .#{$prefix}radio-button--is-block {
+    margin-bottom: 20px;
+  }
+
+  @include element(extra-info) {
+    &-item {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+export var BoxedContentShadowSizesEnum;
+(function (BoxedContentShadowSizesEnum) {
+    BoxedContentShadowSizesEnum["SMALL"] = "small";
+    BoxedContentShadowSizesEnum["MEDIUM"] = "medium";
+    BoxedContentShadowSizesEnum["LARGE"] = "large";
+})(BoxedContentShadowSizesEnum || (BoxedContentShadowSizesEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYm94ZWQtY29udGVudC1zaGFkb3ctc2l6ZXMuZW51bS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL2NvcmUtYW5ndWxhci9zcmMvbGliL2JveGVkLWNvbnRlbnQvZW51bS9ib3hlZC1jb250ZW50LXNoYWRvdy1zaXplcy5lbnVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQU0sQ0FBTixJQUFZLDJCQUlYO0FBSkQsV0FBWSwyQkFBMkI7SUFDckMsOENBQWUsQ0FBQTtJQUNmLGdEQUFpQixDQUFBO0lBQ2pCLDhDQUFlLENBQUE7QUFDakIsQ0FBQyxFQUpXLDJCQUEyQixLQUEzQiwyQkFBMkIsUUFJdEMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZW51bSBCb3hlZENvbnRlbnRTaGFkb3dTaXplc0VudW0ge1xuICBTTUFMTCA9ICdzbWFsbCcsXG4gIE1FRElVTSA9ICdtZWRpdW0nLFxuICBMQVJHRSA9ICdsYXJnZScsXG59XG4iXX0=

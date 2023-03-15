@@ -1,0 +1,81 @@
+.#{$prefix}layout {
+  display: flex;
+  justify-content: stretch;
+  padding: 20px;
+
+  .#{$prefix}article, #{$prefix}article  {
+    flex: 2;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .#{$prefix}aside {
+    margin-right: 75px;
+
+    @include element(mobile-toggle-button) {
+      display: none;
+    }
+
+    @media (max-width: $large-mobile-width) {
+      position: fixed;
+      bottom: 0;
+      background: $primary-color;
+      width: 100%;
+      left: 0;
+      right: 0;
+      max-width: none;
+      padding: 0 20px;
+      z-index: 9999;
+
+      @include element(content) {
+        @include transition(all);
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      @include element(mobile-toggle-button) {
+        background: $primary-color;
+        height: 18px;
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 120px;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+
+        a {
+          flex: 2;
+          color: inherit;
+        }
+      }
+
+      @include modifier(is-open) {
+        .#{$prefix}aside__content {
+          max-height: 1000px;
+        }
+
+        .#{$prefix}aside__mobile-toggle-button {
+          transform: rotate(180deg) translate(50%);
+          right: 50%;
+        }
+      }
+
+      .#{$prefix}side-navbar {
+        max-width: 195px;
+
+        a {
+          color: $white;
+        }
+
+        .#{$prefix}icon {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

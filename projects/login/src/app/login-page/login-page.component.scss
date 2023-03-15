@@ -1,0 +1,98 @@
+.recaptcha {
+  transform: scale(0.66);
+  transform-origin: 0 0;
+
+  @media (min-width: 768px) {
+    transform: scale(1.039);
+    transform-origin: 0 0;
+  }
+}
+
+.title-obs {
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  min-width: 200px;
+
+  @media (min-width: 768px) {
+    padding: 0 25px;
+  }
+}
+
+.btn-third {
+  min-width: 200px;
+
+  @media (min-width: 768px) {
+    min-width: 313px;
+  }
+}
+
+.base-component__content-loginBasePage-second {
+  margin: 70px 25px 50px !important;
+
+  @media (min-width: 768px) {
+    margin: 70px 40px 60px !important;
+  }
+
+  .content-login {
+    margin: 30px auto 50px;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-style: normal;
+}
+::-moz-placeholder {
+  font-style: normal;
+}
+:-ms-input-placeholder {
+  font-style: normal;
+}
+:-moz-placeholder {
+  font-style: normal;
+}
+
+::ng-deep .user-login .und-call-to-action-area__content {
+  padding: 40px 72px;
+  min-height: 333px;
+  @media (max-width: 600px) {
+    padding: 40px 10px;
+  }
+}
+
+::ng-deep .user-login .und-boxed-content--is-large {
+  @media (max-width: 600px) {
+    padding: 50px 10px;
+  }
+}
+::ng-deep .user-login .und-margin-bottom-xl {
+  @media (max-width: 600px) {
+    margin-bottom: 0px;
+  }
+}
+::ng-deep .user-login .und-hero-image__content {
+  margin-top: 0px;
+}
+.form-control::placeholder {
+  line-height: revert;
+}
+
+.title-login,
+.subtitle-login {
+  font-size: 20px;
+}
+
+::ng-deep .und-call-to-action-area__footer {
+  display: flex;
+  width: auto !important;
+  .btn-login {
+    min-width: 334px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

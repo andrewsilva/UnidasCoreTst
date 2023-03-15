@@ -1,0 +1,6 @@
+export var SpinnerTypesEnum;
+(function (SpinnerTypesEnum) {
+    SpinnerTypesEnum["SPIN"] = "spin";
+    SpinnerTypesEnum["GROWING_CIRCLE"] = "growing-circle";
+})(SpinnerTypesEnum || (SpinnerTypesEnum = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3Bpbm5lci10eXBlcy5lbnVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvY29yZS1hbmd1bGFyL3NyYy9saWIvc3Bpbm5lci9lbnVtL3NwaW5uZXItdHlwZXMuZW51bS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLENBQU4sSUFBWSxnQkFHWDtBQUhELFdBQVksZ0JBQWdCO0lBQzFCLGlDQUFhLENBQUE7SUFDYixxREFBaUMsQ0FBQTtBQUNuQyxDQUFDLEVBSFcsZ0JBQWdCLEtBQWhCLGdCQUFnQixRQUczQiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIFNwaW5uZXJUeXBlc0VudW0ge1xuICBTUElOID0gJ3NwaW4nLFxuICBHUk9XSU5HX0NJUkNMRSA9ICdncm93aW5nLWNpcmNsZScsXG59XG4iXX0=

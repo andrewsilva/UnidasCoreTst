@@ -1,0 +1,31 @@
+.#{$prefix}call-to-action-area {
+  $box-padding: 80px;
+
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  position: relative;
+
+  @include element(content) {
+    padding: ($box-padding / 2) $box-padding;
+  }
+
+  @include element(header) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    background: $white;
+  }
+
+  @include element(footer) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0 20px;
+    background: $white;
+    width: calc(100% - (#{$box-padding} * 2));
+    box-sizing: content-box;
+  }
+}

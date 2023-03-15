@@ -1,0 +1,44 @@
+.#{$prefix}expandable-topic {
+  $root: &;
+
+  position: relative;
+
+  @include element(clickable-area) {
+    cursor: pointer;
+    padding-right: $medium-padding;
+  }
+
+  @include element(title) {
+    font-size: 1rem;
+  }
+
+  @include element(description) {
+    color: $color-medium-gray;
+  }
+
+  @include element(arrow-icon) {
+    font-size: 16px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    color: $primary-color;
+    transform: rotate(0deg);
+    @include transition(all);
+  }
+
+  @include element(content) {
+    max-height: 10000px;
+    @include transition(all);
+  }
+
+  @include modifier(is-closed) {
+    #{$root}__content {
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    #{$root}__arrow-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
